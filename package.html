@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Owlnest Media Pvt. Ltd – Packages</title>
+
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <style>
+/* -------------------------------------------------------
+   NAVBAR - 
+-------------------------------------------------------- */
+
+/* -------------------------------------------------------
+   PAGE TITLE BOX
+-------------------------------------------------------- */
+:root{
+      --accent:#f0c040;
+      --muted:#eef2f6;
+      --glass-bg: rgba(255,255,255,0.08);
+      --glass-border: rgba(255,255,255,0.12);
+      --glass-shadow: 0 8px 30px rgba(16,24,40,0.35);
+      --max-width:1200px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:"Poppins",system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      background: linear-gradient(180deg,#081223 0%, #071620 40%, #0b1520 100%);
+      color:#fff;
+      overflow-x:hidden;
+      -webkit-tap-highlight-color: transparent;
+    }
+.custom-nav {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  padding: 12px 22px;
+  transition: 0.4s;
+ 
+}
+
+.navbar-brand {
+  background-color: black;
+  font-weight: 700;
+  color:white !important;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+  margin-left: 22px;
+  font-size: 1.05rem;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+/* Premium underline hover animation */
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background: #f0c040;
+  transition: 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar-toggler {
+  background:white;
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  filter: invert(0);
+}
+
+/* On scroll solid navbar */
+.custom-nav.scrolled {
+  background: #000;
+  backdrop-filter: blur(0);
+}
+
+   
+    .brand{
+      display:flex;
+      gap:12px;
+      align-items:center;
+    }
+
+    .brand img{
+      height:46px;
+      width:46px;
+      object-fit:contain;
+      filter: drop-shadow(0 4px 12px rgba(0,0,0,0.6));
+    }
+
+    .brand h1{
+      font-size:18px;
+      letter-spacing:1px;
+      margin:0;
+      font-weight:700;
+      color:var(--muted);
+    }
+
+    .nav-links{
+      display:flex;
+      gap:18px;
+      align-items:center;
+      font-weight:600;
+      color:rgba(255,255,255,0.85);
+      font-size:14px;
+    }
+
+    .nav-links a{
+      color:inherit;
+      text-decoration:none;
+      padding:8px 12px;
+      border-radius:10px;
+      transition: all .22s ease;
+    }
+
+    .nav-links a:hover{ transform: translateY(-3px); color:var(--accent) }
+
+.page-title {
+  background: black;
+  color: white;
+  padding: 25px;
+  border-radius: 14px;
+  width: 90%;
+  max-width: 500px;
+  margin: 120px auto 40px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* -------------------------------------------------------
+   PACKAGE CARDS
+-------------------------------------------------------- */
+.package-box {
+  background:black;
+  padding: 25px;
+  border-radius: 18px;
+  text-align: left;
+  box-shadow: rgba(0,0,0,0.15) 0 3px 12px;
+  transition: 0.3s;
+  max-width: 550px;
+  margin: auto;
+  border-left: 6px solid #f0c040;
+}
+
+.package-box:hover {
+  transform: translateY(-6px);
+  box-shadow: rgba(0,0,0,0.25) 0 8px 18px;
+}
+
+/* Responsive grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 30px;
+  width: 90%;
+  margin: auto;
+}
+
+/* -------------------------------------------------------
+   FOOTER
+-------------------------------------------------------- */
+ .footer {
+      background: #000;
+      color: white;
+      text-align: center;
+      padding: 25px 10px;
+      margin-top: 40px;
+    }
+    .footer-icons a {
+      margin: 0 12px;
+      font-size: 28px;
+      color: white;
+      transition: 0.3s;
+    }
+    .footer-icons a:hover { color: #f0c040; }
+    .copy { margin-top: 10px; font-size: 0.9rem; }
+
+/* Mobile */
+@media (max-width:480px) {
+  .page-title {
+    font-size: 22px;
+  }
+}
+  </style>
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar fixed-top navbar-expand-lg bg-black">
+
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="a.jpg" width="40" class="me-2" />
+        Owlnest Media
+      </a>
+
+      <!-- Hamburger Toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- ONE SINGLE MENU -->
+      <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+        <ul class="navbar-nav bg-black mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="package.html">Packages</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+<!-- PAGE TITLE -->
+<div class="page-title">
+  Digital Marketing Packages
+</div>
+
+<!-- PACKAGE GRID -->
+<div class="grid">
+
+  <div class="package-box">
+    <h3>🟦 PACKAGE 1: Starter Boost</h3>
+    <p><b>Best for new startups</b></p>
+    <p>• Landing Page Website (1–3 sections)<br>
+       • 5 Posts / Month<br>
+       • Basic Logo Touch-up<br>
+       • WhatsApp Broadcast Setup<br>
+       • 1 Email Campaign<br>
+       • Basic SEO</p>
+    <h4><b>₹3,999/month</b></h4>
+  </div>
+
+  <div class="package-box">
+    <h3>🟩 PACKAGE 2: Growth Pro</h3>
+    <p><b>Perfect for growing brands</b></p>
+    <p>• Full Website (5 pages)<br>
+       • 12 Posts / Month<br>
+       • 2 Event Posters<br>
+       • WhatsApp Marketing<br>
+       • Email Marketing (2/month)<br>
+       • GMB Optimization<br>
+       • SEO (5–7 keywords)</p>
+    <h4><b>₹7,999/month</b></h4>
+  </div>
+
+  <div class="package-box">
+    <h3>🟧 PACKAGE 3: Business Expansion</h3>
+    <p><b>For businesses upgrading their brand</b></p>
+    <p>• Custom Website + UI<br>
+       • 20 Posts / Month<br>
+       • 4 Posters<br>
+       • WhatsApp Automation<br>
+       • Email Automation<br>
+       • 2 Blogs / Month<br>
+       • Advanced SEO (10 keywords)<br>
+       • Monthly Reports</p>
+    <h4><b>₹12,999/month</b></h4>
+  </div>
+
+  <div class="package-box">
+    <h3>🟥 PACKAGE 4: Premium Brand Builder</h3>
+    <p><b>Complete branding & marketing</b></p>
+    <p>• Full Website + Dashboard<br>
+       • 30 Posts / Reels<br>
+       • 6 Posters + 2 Banners<br>
+       • Unlimited WhatsApp<br>
+       • Full Email Automation<br>
+       • SEO (20 keywords)<br>
+       • Ads Setup (Google/Meta)<br>
+       • Competitor Analysis<br>
+       • Branding Kit</p>
+    <h4><b>₹24,999/month</b></h4>
+  </div>
+
+  <div class="package-box">
+    <h3>🟪 ONE-TIME SERVICES</h3>
+    <p>• Logo Design – ₹999<br>
+       • Poster – ₹299<br>
+       • Poster Pack (10) – ₹1,499<br>
+       • Website Revamp – ₹2,999<br>
+       • Portfolio Website – ₹1,999<br>
+       • QR Menu – ₹1,499<br>
+       • Google Ads Setup – ₹1,499<br>
+       • Meta Ads Setup – ₹1,499</p>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <h2>Connect with us</h2>
+
+  <div class="footer-icons">
+    <a href="https://wa.me/918983626846" class="wa"><i class="bi bi-whatsapp"></i></a>
+    <a href="https://instagram.com/OwlNestMedia" class="ig"><i class="bi bi-instagram"></i></a>
+    <a href="https://www.linkedin.com/company/owlnest-media-pvt-ltd" class="li"><i class="bi bi-linkedin"></i></a>
+    <a href="https://youtube.com/@owlnestmedia" class="yt"><i class="bi bi-youtube"></i></a>
+  </div>
+
+  <p class="copy">© 2025 <b>Owlnest Media Pvt. Ltd</b>. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
