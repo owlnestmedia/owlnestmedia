@@ -151,6 +151,21 @@
 
 
     /* FORM CONTAINER */
+    .form-info{
+      background: #000;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 600px;
+      margin: 40px auto;
+    }
+    .form-info{
+      margin: 15px 0; 
+        display: flex; 
+        flex-direction: column;
+       
+    }
     .form-container {
       background: black;
       padding: 30px;
@@ -216,6 +231,10 @@
     max-width: 90%;
     padding: 20px;
   }
+  .form-info{
+    max-width: 90%;
+    padding: 20px;
+  }
 
   .form-row input,
   .form-row textarea,
@@ -239,6 +258,11 @@
 @media (max-width: 480px) {
   .form-container {
     max-width: 92%;
+    padding: 16px;
+    border-radius: 10px;
+  }
+  .form-info{
+     max-width: 92%;
     padding: 16px;
     border-radius: 10px;
   }
@@ -314,6 +338,17 @@
       <label>Company / Brand Name:</label>
       <input type="text" id="companyBrandName" placeholder="Enter Company Name">
     </div>
+    <div class="form-row">
+      <label>package-box:</label>
+      <select id="selectedService">
+      <option value="">-- Select --</option>
+      <option>Starter Boost</option>
+      <option>Growth Pro</option>
+      <option>Business Expansion</option>
+      <option>Premium Brand Builder</option>
+      <option>ONE-TIME SERVICES</option>
+      </select>
+    </div>
 
     <div class="form-row">
       <label>Service You're Interested In:</label>
@@ -325,21 +360,43 @@
         <option>PowerPoint Presentation</option>
         <option>Ad Campaigns</option>
         <option>Social Media Optimization</option>
-      </select>
+        <option>Logo Design</option>
+        <option>Poster</option>
+        <option>Poster pack</option>
+        <option>Website Revamp</option>
+        <option>Portfolio Website</option>
+        <option>QR Menu</option>
+        <option>Google Ads Setup</option>
+        <option>Meta Ads Setup </option>
+      </select>    
     </div>
+  
+      
+   
 
-    <button onclick="sendToWhatsApp()" class="btn">Submit</button>
+    <button onclick="sendToWhatsApp()" class="btn">Send message</button>
   </div>
 
   <!-- GOOGLE MAP -->
   <div class="map-container">
-    <h4 style="text-align:center; margin-bottom:10px;"><b>📍 Our Location</b></h4>
+    <h4 style="text-align:center; margin-bottom:10px;"><b>📍Our Location</b></h4>
     <iframe 
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.532325029934!2d72.812!3d19.425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b02dc8c0e28b%3A0x2ce6b52a7e5f1a9a!2sComputech%20Academy!5e0!3m2!1sen!2sin!4v1700000000000">
     </iframe>
   </div>
 
 </main>
+<section>
+    <div class="form-info">
+    <label><h4>Contact Information</h4></label><br>
+    <label>📍Address</label>
+    <p>Above IDBI Bank, Reliable Prestige, Chandan Naka, Achole Rd, Nalasopara East 401209</p>
+    <label>📞Phone</label>
+    <p>+918983626846</p>
+    <label>📩Email</label>
+    <p>team.owlnestmedia@gmail.com</p>
+    </div>
+</section>
 
 <!-- FOOTER -->
 <footer class="footer">
