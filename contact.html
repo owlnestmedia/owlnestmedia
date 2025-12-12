@@ -337,7 +337,7 @@
     </div>
     <div class="form-row">
       <label>package-box:</label>
-      <select id="selectedService">
+      <select id="packageBox">
       <option value="">-- Select --</option>
       <option>Starter Boost</option>
       <option>Growth Pro</option>
@@ -415,14 +415,15 @@ function sendToWhatsApp() {
   let contact = document.getElementById("emailContact").value;
   let company = document.getElementById("companyBrandName").value;
   let service = document.getElementById("selectedService").value;
+  let packageName = document.getElementById("packageBox").value;
 
-  if (!name || !contact || !company || !service) {
+  if (!name || !contact || !company || !service || !packageName) {
     alert("⚠️ Fill all fields before submitting.");
     return;
   }
 
   let msg =
-  `New Enquiry:\n\nName: ${name}\nContact: ${contact}\nCompany: ${company}\nService: ${service}`;
+  `New Enquiry:\n\nName: ${name}\nContact: ${contact}\nCompany: ${company}\nService: ${service} \npackage: ${packageName}`;
 
   let url = "https://wa.me/918983626846?text=" + encodeURIComponent(msg);
   window.open(url, "_blank");
