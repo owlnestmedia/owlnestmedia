@@ -345,6 +345,11 @@
       color: white;
       transition: 0.3s;
     }
+    .site-footer{
+  background: #111;
+  padding: 15px;
+  text-align: center;
+}
     .footer-icons a:hover { color: #f0c040; }
     .copy { margin-top: 10px; font-size: 0.9rem; }
 
