@@ -332,6 +332,7 @@
     .slide[data-index="1"]{ transform: translateX(36%) scale(.90) rotateY(-8deg); opacity:.9; z-index:30 }
     .slide[data-index="2"]{ transform: translateX(72%) scale(.85) rotateY(-14deg); opacity:.65; z-index:20 }
     .slide[data-index="-1"]{ transform: translateX(-36%) scale(.92) rotateY(8deg); opacity:.88; z-index:30 }
+   
     .footer {
       background: #000;
       color: white;
@@ -585,5 +586,7 @@ body.dark .chat-popup {
     }
 
     /* focus styles for accessibility */
-    .btn-primary:focus, .dot:focus { outline: 3px solid rgba(240,192,64,0.18); outline-offset:4px; border-radius:10px }
+    .btn-primary:focus, .dot:focus { 
+      outline: 3px solid rgba(240,192,64,0.18);
+       outline-offset:4px; border-radius:10px }
  
