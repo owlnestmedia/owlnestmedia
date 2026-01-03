@@ -192,18 +192,20 @@
     /* -------------------------------------
                 SLIDER (premium)
     ------------------------------------- */
-    .slider {
-      width: 50%;
-      height: 20%;
-      border-radius: 18px;
-      overflow: hidden;
-    }
+   .slider {
+  width: 100%;
+  max-width: 420px;  
+  margin: auto;
+  border-radius: 18px;
+  overflow: hidden;
+}
+.slider img {
+  width: 100%;
+  height: 300px;      
+  object-fit:contain; 
+  background: #000;
+}
 
-    .slider img {
-      width: 100%;
-      height: 50%;
-      object-fit: cover;
-    }
 
     /* Mobile */
     @media (max-width: 720px) {
@@ -215,7 +217,7 @@
       .slider {
         width: 100%;
         max-width: 500px;
-        height: 450px;
+        height: 50%;
       }
     }
 
@@ -281,7 +283,16 @@
       font-size: 0.9rem;
     }
 
+    /*  Mobile */
+@media (max-width: 576px) {
+  .slider {
+    max-width: 320px;
+  }
 
+  .slider img {
+    height: 200px;
+  }
+}
 
     /* Responsive */
     @media(max-width:480px) {
@@ -294,6 +305,17 @@
         font-size: 20px;
       }
     }
+
+    /* Tablet */
+@media (min-width: 577px) and (max-width: 992px) {
+  .slider {
+    max-width: 380px;
+  }
+
+  .slider img {
+    height: 230px;
+  }
+}
   </style>
 </head>
 
@@ -305,7 +327,7 @@
     <div class="container-fluid">
       <!-- Logo -->
       <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <img src="a.jpg" width="40" class="me-2" />
+        <img src="a.jpeg" width="40" class="me-2" />
         Owlnest Media
       </a>
 
@@ -336,17 +358,17 @@
     <!-- Left Text -->
     <div class="hero-text">
       <h1>About Owlnest Media</h1>
-      <p>We help businesses grow through creative branding, social media management, and premium content production.</p>
+      <p><b>We help businesses grow through creative branding, social media management, and premium content production.</b></p>
       <br>
-      <p>We help businesses grow through creative branding by building strong, recognizable brand identities. From logo
+      <p><b>b>We help businesses grow through creative branding by building strong, recognizable brand identities. From logo
         design to visual systems and brand guidelines, we ensure every element reflects your values and positions your
-        business clearly in the market.</p><bR>
-      <p>Our social media management services focus on strategy, consistency, and engagement. We plan, create, and
+        business clearly in the market.</b></p><bR>
+      <p><b>Our social media management services focus on strategy, consistency, and engagement. We plan, create, and
         manage content across platforms to help brands connect with their audience, increase visibility, and build
-        long-term trust online.</p><br>
-      <p>Through premium content production, we deliver high-quality visuals and storytelling that elevate your brand.
+        long-term trust online.</b></p><br>
+      <p><b>Through premium content production, we deliver high-quality visuals and storytelling that elevate your brand.
         From photography and video to digital content and campaigns, our work is designed to capture attention,
-        communicate your message, and drive measurable results.</p>
+        communicate your message, and drive measurable results.</b></p>
 
       <div class="glass-card">
         • Digital Marketing • Social Media Growth • Branding Solutions
@@ -358,25 +380,54 @@
       <div class="carousel-inner">
 
         <div class="carousel-item active">
-          <img src="beanscafe.jpeg" class="d-block w-100 slider-img" alt="">
+          <img src="90's.jpeg" class="img-fluid mx-auto d-block w-100 slider-img" alt="">
         </div>
 
         <div class="carousel-item">
-          <img src="90scafe.jpeg" class="d-block w-100 slider-img" alt="">
+          <img src="bb-removebg-preview.png" class="img-fluid mx-auto d-block w-100 slider-img" alt="">
         </div>
 
         <div class="carousel-item">
-          <img src="desichai.jpeg" class="d-block w-100 slider-img" alt="">
+          <img src="artist.jpeg" class="img-fluid mx-auto d-block w-100 slider-img" alt="">
         </div>
 
         <div class="carousel-item">
-          <img src="studybox.jpeg" class="d-block w-100 slider-img" alt="">
+          <img src="computech.jpeg" class="img-fluid mx-auto d-block w-100 slider-img" alt="">
         </div>
 
         <div class="carousel-item">
-          <img src="royal.jpeg" class="d-block w-100 slider-img" alt="">
+          <img src="drawing.jpeg" class="img-fluid mx-auto d-block w-100 slider-img" alt="">
         </div>
-
+        <div class="carousel-item">
+          <img src="chalocar.jpeg" class="img-fluid mx-auto d-block w-100 slider-img" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="masterchess.jpeg" class="img-fluid mx-auto d-block w-100 slider-img" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="hidden.jpeg" class=" img-fluid mx-autod-block w-100 slider-img" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="delhi-removebg-preview.png" class="img-fluid mx-auto d-block w-100 slider-img" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="desichai.png" class="img-fluid mx-auto d-block w-100 slider-img" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="studybox.jpeg" class="img-fluid mx-auto d-block w-100 slider-img" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="univo.jpeg" class="img-fluid mx-auto d-block w-100 slider-img" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="crack-removebg-preview.png" class="img-fluid mx-autod-block w-100 slider-img" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="royal.jpeg" class="img-fluid mx-auto d-block w-100 slider-img" alt="">
+        </div>
+         <div class="carousel-item">
+          <img src="club_7.png" class="img-fluid mx-auto d-block w-100 slider-img" alt="">
+        </div>
       </div>
 
 

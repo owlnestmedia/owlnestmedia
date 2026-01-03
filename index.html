@@ -23,7 +23,7 @@
     <div class="container-fluid">
       <!-- Logo -->
       <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <img src="a.jpg" width="40" class="me-2" />
+        <img src="a.jpeg" width="45" class="me-2" />
         Owlnest Media
       </a>
 
@@ -53,13 +53,7 @@
 
     <!-- Background media (image stack / video) -->
     <div class="bg-media" aria-hidden="true">
-      <!-- Option: use a background video. Put bg.mp4 in same folder and uncomment below:
-      <video autoplay muted loop playsinline>
-        <source src="bg.mp4" type="video/mp4">
-      </video>
-      -->
-      <!-- Background fallback image -->
-     
+      
     </div>
 
     <div class="bg-overlay" aria-hidden="true"></div>
@@ -107,7 +101,7 @@
         </div>
 
         <div class="slide" data-index="0" data-id="0" aria-hidden="false">
-          <img src="https://www.appsflyer.com/wp-content/uploads/2024/02/50988-Hybrid-app-vs-Native-app-vs-Web-app-vs-Cross-platform-app-SP.jpg" alt="Portfolio example 1">
+          <img src="https://www.aceinfoway.com/ogimages/web-application-development.jpg" alt="Portfolio example 1">
           <div class="slide-meta">
             <strong>Website Design & Mobile Development</strong><div style="font-size:12px;opacity: .9;">Landing & conversion</div>
           </div>
@@ -122,6 +116,47 @@
       </section>
 
     </div>
+
+   
+<!-- GSAP -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+<!-- Floating WhatsApp Button -->
+<div class="whatsapp-btn" id="waBtn">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+</div>
+
+<!-- Chat Popup -->
+<div class="chat-popup" id="chatPopup">
+  
+  <!-- Header -->
+  <div class="chat-header">
+    <div>
+      <strong>Chat with us</strong>
+      <p class="status online">● Online</p>
+    </div>
+    <div class="icons">
+      <span onclick="closeChat()">×</span>
+    </div>
+  </div>
+
+  <!-- Body -->
+  <div class="chat-body">
+    <p class="greet">Hi 👋<br>How can we help you?</p>
+  </div>
+
+  <!-- Footer -->
+  <div class="chat-footer">
+     <a href="https://wa.me/918983626846?text=Hello, I want to know more"
+       target="_blank">
+    <button onclick="startChat()">Start Chat on WhatsApp</button>
+     </a>
+  </div>
+
+</div>
+
+
   </main>
 
   <!-- Optional footer -->
@@ -134,7 +169,7 @@
     <a href="https://www.linkedin.com/company/owlnest-media-pvt-ltd" class="li"><i class="bi bi-linkedin"></i></a>
     <a href="https://youtube.com/@owlnestmedia" class="yt"><i class="bi bi-youtube"></i></a>
     <a href="https://www.facebook.com/share/1BZRtFyPTv/?mibextid=wwXIfr" class="fb"><i class="bi bi-facebook"></i></a>
-   <a href="https://owlnextmedia.blogspot.com/2025/12/owl-next-media.html?m=1" class="web"> <i class="bi bi-globe"></i>
+   <a href="https://owlnextmedia.blogspot.com" class="web"> <i class="bi bi-globe"></i>
 </a>
 
   </div>
@@ -261,7 +296,7 @@
           p.y += p.vy;
           if(p.x < -10) p.x = w+10;
           if(p.x > w+10) p.x = -10;
-          if(p.y < -10) p.y = h+10;
+          if(p.y <script -10) p.y = h+10;
           if(p.y > h+10) p.y = -10;
           ctx.beginPath();
           ctx.fillStyle = 'rgba(240,200,80,'+p.alpha+')';
@@ -280,7 +315,49 @@
     nav.classList.remove('scrolled');
   }
 });
-  </script>
+</script>
+<script>
+const btn = document.getElementById("waBtn");
+const popup = document.getElementById("chatPopup");
+
+btn.addEventListener("click", () => {
+  popup.style.display = "block";
+  gsap.fromTo(popup,
+    { y: 60, opacity: 0 },
+    { y: 0, opacity: 1, duration: 0.4 }
+  );
+});
+
+function closeChat() {
+  gsap.to(popup, {
+    y: 60,
+    opacity: 0,
+    duration: 0.3,
+    onComplete: () => popup.style.display = "none"
+  });
+}
+
+function startChat() {
+  const name = document.getElementById("username").value;
+  const agent = document.getElementById("agent").value;
+
+  if (name === "") {
+    alert("Please enter your name");
+    return;
+  }
+
+  const msg = `Hello, my name is ${name}. I want to know more.`;
+  window.open(`https://wa.me/${agent}?text=${encodeURIComponent(msg)}`, "_blank");
+}
+
+function toggleDark() {
+  document.body.classList.toggle("dark");
+ 
+    
+}
+</script>
+
+
 
 </body>
 </html>
